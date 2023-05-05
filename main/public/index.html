@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 25px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="index.html">main</a>
+        <a href="login.html">login</a>
+        <a href="register.html">register</a>
+    </div>
+    <div class="container" style="margin-left: 220px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center mt-4 animate__animated animate__fadeIn">main page</h1>
+                <div id="div" class="mt-4 animate__animated animate__fadeIn"></div>
+                
+                <!-- <div class="text-center mt-4">
+                    <a href="login.html" class="btn btn-custom animate__animated animate__fadeIn">登录</a>
+                    <a href="register.html" class="btn btn-custom animate__animated animate__fadeIn">注册</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

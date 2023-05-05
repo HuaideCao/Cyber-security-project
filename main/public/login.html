@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 25px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="index.html">main</a>
+        <a href="login.html">login</a>
+        <a href="register.html">register</a>
+    </div>
+    <div class="container" style="margin-left: 220px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center mt-4 animate__animated animate__fadeIn">login</h1>
+                <div id="m" class="mt-4"></div>
+                <form id="loginForm" class="mt-4">
+
+                    <div class="form-floating mb-3">
+                        <input id="email" type="email" class="form-control" placeholder="email">
+                        <label for="email">email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input id="password" type="password" class="form-control" placeholder="password">
+                        <label for="password">password</label>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-custom animate__animated animate__fadeIn" id="login" value="login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
